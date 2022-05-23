@@ -7,9 +7,9 @@ class Interface:
 
     @staticmethod
     def find_user(insured_persons):
-        insureds_name = input("Enter the insured's name:\n")
-        insureds_surname = input("Enter the insured's surname:\n")
+        insureds_first_name = input("Enter the insured's first name:\n")
+        insureds_last_name = input("Enter the insured's last name:\n")
         print()
         for person in insured_persons:
-            if insureds_name in person and insureds_surname in person:
+            if insureds_first_name in person and insureds_last_name in person:
                 print(person.__str__(), "\n")
